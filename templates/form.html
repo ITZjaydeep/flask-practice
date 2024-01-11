@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form</h1>
+
+    <form action="{{url_for('form')}}" method="post">
+        <input type="text" name="P" placeholder="phy" required="required">
+        <input type="text" name="C" placeholder="chem" required="required">
+        <input type="text" name="M" placeholder="math" required="required">
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <hr>
+
+    The AVG is {{score}}.
+
+</body>
+</html>
